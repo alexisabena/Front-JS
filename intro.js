@@ -88,3 +88,47 @@ else if(number3 == number4 || number3 < 3 ) {
 else{
     console.log("El número 2 es mayor que número 1");
 }
+
+console.log("\n***************** WHILE ***********************\n");
+
+let numberWhile = 0;
+while (numberWhile <= 12) {
+    console.log(numberWhile);
+    numberWhile = numberWhile + 2;
+}
+console.log(`Aquí se sale del while ${numberWhile}`);
+
+console.log("\n***************** DO WHILE ***********************\n");
+
+let numeroDoWhile = 22;
+do {
+    numeroDoWhile = numeroDoWhile + 2;
+    console.log(numeroDoWhile);
+} while ( numeroDoWhile < 20);
+console.log(`Aquí se sale del Do While ${numeroDoWhile}`);
+
+console.log("\n***************** FOR ***********************\n");
+
+let numeroFor = 0 //Se saca del bloque de For para usarlo en la expresi{on}
+for (numeroFor; numeroFor <= 12; numeroFor = numeroFor + 1) {
+    console.log(numeroFor);
+}
+console.log(`Aquí salimos del for ${ numeroFor}`);
+
+console.log("\n***************** SWITCH  ***********************\n");
+
+switch (prompt("¿Qué tanto calor hace? (en minúscula)")){
+    case "mucho":
+        console.log("Hace mucha la calor");
+        break;
+    case "poco": 
+        console.log("¡Qué mentiras!");
+        break;
+    case "normal":
+        console.log("Esto no es guadalajara");
+        break;
+    default:
+        console.log("Pues hace muchísimo calor");
+        break;
+}
+console.log("Aquí salimos del Switch");
