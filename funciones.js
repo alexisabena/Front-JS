@@ -28,7 +28,7 @@ function sumar(x,y){
     return x + y;
 }
 
-const restar = (a,b) => {
+const restar = (a,b) => { //la flecha sustituye la palabra function
     return a - b;
 }
 console.log( restar(10, 5));
@@ -38,3 +38,26 @@ function saludar(quien){
 }
 saludar("Regina");
 console.log("bye");
+
+// Excepciones
+
+function preguntaDireccion(question){
+    let result = prompt(question);
+    if (result.toLowerCase() == "izquierda") return "I";
+    if (result.toLowerCase() == "derecha") return "D";
+    throw new Error("Dirección inválida: " + result);
+}
+
+function mirar() {
+    if (preguntaDireccion("pa dónde?") == "I") {
+        return "una mansión";
+    } else {
+        return "dos pulpos enormes";
+    }
+}
+
+try {
+    console.log("mirar ", mirar());
+}   catch (error) {
+    console.log("Algo salió mal : " + error);
+}
