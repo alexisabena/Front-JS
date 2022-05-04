@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+}
+
+
+
+input{
+    display: flex;
+    position: relative;
+    top: 163.5px;
+    right: 40px
+}
+
+.pokeDex{
+    align-self: center;
+}
+
+.pokeDexImg{
+    display: flex;
+    position: relative;
+    /* top: 50px; */
+    right: 75px;
+}
+
+.info{
+    z-index: 9;
+    position: relative;
+    top: 17px;
+    right: -170px;
+}
+
+#pokeWrapp{
+    display: flex;
+    position: relative;
+    top: 30px;
+    z-index: 10;
+    right: 75px;
+    /* align-items: center;
+    justify-content: center; */
+    /* top: 163.5px;
+    right: 57.5%; */
+}
+
+#pokeName{
+    display: flex;
+    position: relative;
+    z-index: 9;
+    top: -328px;
+    right: -10px;
+}
+
+.dataBox{
+    position: relative;
+    top: 66px;
+    /* right: 40.25px; */
+    /* display: grid; */
+    column-count: 2;
+    /* column-gap: 12px; */
+    flex-wrap: wrap;
+    direction: ltr;
+    justify-items: start;
+    justify-content: space-around;
+    width: 81px;
+    font-size: small
+}
